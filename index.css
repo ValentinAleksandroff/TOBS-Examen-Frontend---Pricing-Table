@@ -1,0 +1,308 @@
+/* Etiquetas */
+body{
+    background-color: #6C4FFF;
+}
+h1{
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    font-size: 1.1rem;
+}
+hr{
+    width: 3rem;
+    border-style: solid;
+    border-color: #14DE85;
+}
+span{
+    
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+}
+p{
+    color: #A9B0AD;
+    font-size: 0.6rem;
+}
+
+/* Tarjeta Principal*/
+.tarjetaPrincipal{
+    background-color: white;
+    width: 100%;
+    height: 40%;
+    border-radius: 1rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+/* Tarjetas Secundarias */
+.tarjetaBotones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+.subtarjetaBotones{
+    box-shadow: 0 0 1rem -.7rem black;
+    border-radius: 2rem;
+    margin: .5rem;
+    padding: .5rem;
+    height: 2rem;
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+.subTarjeta{
+    box-shadow: 0 0 1rem -.7rem black;
+    border-radius: 1.5rem;
+    margin: .5rem;
+    padding: .5rem;
+    height: 80%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tarjetasSuscripciones{
+   display: flex;
+   justify-content: space-evenly;
+   padding: 3% 5% 5% 5%;
+   height: 75%;
+}
+
+/* Botones */
+.botones{
+    background-color: #14DE85;
+    border-radius: 1.5rem;
+    border-color: transparent;
+    width: 45%;
+    color: white;
+    font-weight: bold;
+    font-size: .75rem;
+    cursor: pointer;
+    outline: none;
+}
+.botonesRegister{
+    width: 90%;
+}
+.botonesRegister .botones{
+    height: 1.5rem;
+    width: 100%;
+}
+.botonesRegister .botones:hover{
+    background-color: #C9FFE7;
+    color: #14DE85;
+    transition-delay: 80ms;
+}
+.desactivado{
+    background-color: #C9FFE7;
+    color: #14DE85;
+}
+
+/* Iconos */
+.fas{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+.icono{
+    background-color: #14DE85;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+
+/* MediaQueries Responsive */
+@media (min-width: 300px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.2rem;
+        margin: .7rem;
+    }
+    span{
+    
+        font-size: .98rem;
+    }
+    p{
+        font-size: .5rem;
+    }
+    .fas{
+        font-size: 1.3rem;
+    }
+    .icono{
+        width: 3rem;
+        height: 3rem;
+    }
+    .subTarjeta{
+        width: 25%;
+        margin: .5rem;
+        padding: .5rem;
+    }
+    .botonesRegister .botones{
+        height: 1.6rem;
+        width: 100%;
+        font-size: .58rem;
+    }
+}
+
+@media (min-width: 600px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        margin: .7rem;
+    }
+    span{
+    
+        font-size: 2.3rem;
+    }
+    p{
+        font-size: .9rem;
+    }
+    .botonesRegister .botones{
+        height: 2.2rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.6rem;
+        margin: .7rem;
+    }
+    span{
+    
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .fas{
+        font-size: 2.7rem;
+    }
+    .icono{
+        width: 5rem;
+        height: 5rem;
+    }
+    .subTarjeta{
+        width: 33%;
+        margin: .5rem;
+        padding: .5rem;
+    }
+    .botonesRegister .botones{
+        height: 2.5rem;
+        width: 100%;
+        font-size: .8rem;
+    }
+    .subTarjeta{
+        border-radius: 1.8rem;
+    }
+    .subtarjetaBotones{
+        height: 2.5rem;
+        width: 15rem;
+    }
+}
+@media (min-width: 1200px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+        margin: .7rem;
+    }
+    hr{
+        width: 6rem;
+    }
+    span{
+    
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    .fas{
+        font-size: 3.3rem;
+        margin-top: 1.4rem;
+    }
+    .icono{
+        width: 6rem;
+        height: 6rem;
+    }
+    .subTarjeta{
+        width: 33%;
+        margin: .5rem;
+        padding: .5rem;
+    }
+    .botonesRegister .botones{
+        height: 3rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .tarjetaPrincipal{
+        width: 60%;
+    }
+    .subTarjeta{
+        border-radius: 1.8rem;
+    }
+    .subtarjetaBotones{
+        height: 3rem;
+        width: 17rem;
+    }
+    .botones{
+        font-size: .9rem;
+    }
+}
+@media (min-width: 1600px){
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 2.4rem;
+        margin: .7rem;
+    }
+    hr{
+        width: 8rem;
+    }
+    span{
+    
+        font-size: 4.5rem;
+    }
+    p{
+        font-size: 1.7rem;
+    }
+    .fas{
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+    .icono{
+        width: 8rem;
+        height: 8rem;
+    }
+    .tarjetaPrincipal{
+        width: 60%;
+    }
+    .subTarjeta{
+        width: 33%;
+        margin: .5rem;
+        padding: .5rem;
+    }
+    .botonesRegister .botones{
+        height: 3rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+}
