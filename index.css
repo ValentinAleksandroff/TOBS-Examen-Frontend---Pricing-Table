@@ -75,6 +75,7 @@ p{
    justify-content: space-evenly;
    padding: 3% 5% 5% 5%;
    height: 75%;
+   flex-direction: row;
 }
 
 /* Botones */
@@ -123,56 +124,77 @@ p{
 /* MediaQueries Responsive */
 @media (min-width: 300px){
     h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     h2{
-        font-size: 1.2rem;
+        font-size: 2rem;
         margin: .7rem;
     }
     span{
     
-        font-size: .98rem;
+        font-size: 3rem;
     }
     p{
-        font-size: .5rem;
+        font-size: 1rem;
     }
     .fas{
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
     .icono{
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
     }
     .subTarjeta{
-        width: 25%;
         margin: .5rem;
         padding: .5rem;
+        width: 90%;
     }
     .botonesRegister .botones{
-        height: 1.6rem;
+        height: 2rem;
         width: 100%;
-        font-size: .58rem;
+        font-size: .75rem;
+    }
+    .tarjetasSuscripciones{
+        flex-direction:column;
     }
 }
 
 @media (min-width: 600px){
     h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     h2{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         margin: .7rem;
     }
     span{
     
-        font-size: 2.3rem;
+        font-size: 4rem;
     }
     p{
-        font-size: .9rem;
+        font-size: 1.2rem;
+    }
+    .fas{
+        font-size: 2.7rem;
+    }
+    .icono{
+        width: 5rem;
+        height: 5rem;
+    }
+    .subTarjeta{
+        width: 95%;
+    }
+    .subtarjetaBotones{
+        height: 2.5rem;
+        width: 15rem;
     }
     .botonesRegister .botones{
-        height: 2.2rem;
+        height: 3rem;
         width: 100%;
+        font-size: 1rem;
+    }
+    .tarjetasSuscripciones{
+        flex-direction:column;
     }
 }
 
@@ -199,7 +221,6 @@ p{
         height: 5rem;
     }
     .subTarjeta{
-        width: 33%;
         margin: .5rem;
         padding: .5rem;
     }
@@ -214,6 +235,9 @@ p{
     .subtarjetaBotones{
         height: 2.5rem;
         width: 15rem;
+    }
+    .tarjetasSuscripciones{
+        flex-direction:row;
     }
 }
 @media (min-width: 1200px){
@@ -265,8 +289,12 @@ p{
     .botones{
         font-size: .9rem;
     }
+    .tarjetasSuscripciones{
+        flex-direction:row;
+    }
 }
 @media (min-width: 1600px){
+    
     h1{
         font-size: 3.5rem;
     }
@@ -304,5 +332,8 @@ p{
         height: 3rem;
         width: 100%;
         font-size: 1rem;
+    }
+    .tarjetasSuscripciones{
+        flex-direction:row;
     }
 }
